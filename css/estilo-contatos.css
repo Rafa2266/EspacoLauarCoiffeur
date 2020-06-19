@@ -1,0 +1,67 @@
+    .destaque {
+        background-color: rgb(7, 197, 245);
+    }
+    
+    .contatos {
+        background-color: aquamarine;
+        border-radius: 4px;
+        border: 4px solid black;
+        box-shadow: 1px 1px 4px #999;
+        box-shadow: inset 1px 1px 4px #999;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+    .contatos h2 {
+        margin: 0.4em 0em;
+        font-size: 1.8em;
+    }
+    
+    .contatos h2:before {
+        content: "\2756"
+    }
+    
+    .contatos li {
+        margin-bottom: 0.3em;
+        font-size: 1.3em;
+    }
+    
+    .contatos li:nth-child(1):before {
+        content: '\260E';
+    }
+    
+    .contatos li:nth-child(2):before {
+        content: '\260E';
+    }
+    
+    .contatos li:nth-child(3):before {
+        content: url("../img/watsapp-logo.png");
+    }
+    
+    footer p {
+        margin-top: 0;
+    }
+    
+    footer {
+        height: 10em;
+    }
+    
+    @media(min-width:630px) {
+        footer {
+            height: 8em;
+        }
+        .contatos {
+            width: 70%;
+            position: absolute;
+            top: 40%;
+            left: 10%;
+        }
+        .contatos li {
+            margin-bottom: 0.3;
+            margin-top: 0.7em;
+        }
+        .destaque {
+            position: relative;
+            height: 40em;
+        }
+    }
